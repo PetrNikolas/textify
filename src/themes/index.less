@@ -1,0 +1,66 @@
+@import '~themes/abstracts/_vars.less';
+
+body {
+	background-color: #fff;
+}
+
+footer {
+	text-align: center;
+	padding: 40px 20px;
+}
+
+a {
+	color: @primary-text-color !important;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: @border-color-base;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+:global {
+	.ant-layout {
+		background: #fff;
+	}
+
+	.ant-card {
+		-webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+	}
+
+	.margin-right {
+		margin-right: 16px;
+	}
+
+	a:focus {
+		text-decoration: none;
+	}
+}
+@media (min-width: 1600px) {
+	:global {
+		.ant-col-xl-48 {
+			width: 20%;
+		}
+
+		.ant-col-xl-96 {
+			width: 40%;
+		}
+	}
+}
+@media (max-width: 767px) {
+	:global {
+		.ant-card {
+			.ant-card-head {
+				padding: 0 12px;
+			}
+
+			.ant-card-body {
+				padding: 12px;
+			}
+		}
+	}
+}

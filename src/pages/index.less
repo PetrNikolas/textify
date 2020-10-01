@@ -1,0 +1,40 @@
+.home {
+	position: relative;
+	max-width: 1180px;
+	margin: 0 auto;
+
+	h1 {
+		margin: 0;
+		width: 100%;
+		padding-top: 80px;
+		padding-bottom: 20px;
+		line-height: 1.15;
+		font-size: 48px;
+		color: @primary-text-color;
+	}
+
+	p {
+		padding-bottom: 50px;
+		font-size: 24px;
+	}
+
+	h1,
+	p {
+		text-align: center;
+	}
+
+	:global {
+		.ant-card {
+			border-radius: 0;
+			margin-bottom: 24px;
+			&:hover {
+				-webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+				box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+			}
+		}
+
+		.ant-card-body {
+			overflow-x: hidden;
+		}
+	}
+}
